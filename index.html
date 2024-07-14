@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">        
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="icon" href="image 1.png"/>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <title>Alura Geek</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header">
+            <section>
+                <img id="imagen" src="logo.png" />
+            </section>
+        </header>
+        <div class="body">
+                <section class="productos">
+                    <h1>MIS PRODUCTOS:</h1>
+                    <section class="catalogo" data-lista>
+                        <div class="card" >
+                            <img id="imagenArticulo" src="tasa.png"/>
+                            <h2 id="precio">$60.00</h2>
+                            <h2 id="nombre">tasaStorm</h2>
+                            <button class ="deleteButton" data-id="${id}"><img src="basurero.png" alt="eliminar"/></button>
+                        </div>
+                    </section>
+                </section>
+        
+                <section class="formulario">
+                    <div class="titulo" >
+                        <h1>AGREGAR PRODUCTO:</h1>
+                    </div>
+                    <form class="inputs" data-formulario>
+                        <input type="text" placeholder="nombre..." required data-nombre/>
+                        <input type="text" placeholder="precio..." required data-precio/>
+                        <input type="text" placeholder="imagen..." required data-imagen/>
+                        <div class="botones">
+                            <input id="boton" type="submit" value="Enviar">
+                            <input id="boton" type="submit" value="Limpiar" disabled>                  
+                        </div>
+                    </form>
+                </section>    
+        </div>
+        <footer class="footer">
+            <section>
+                <img src="logo.png" />
+                <h4>DESAROLLADO POR ALEJANDRA VILLA</h4>
+                <h5 id="subtitulo">ALURA LATAM 2024</h5>
+            </section>
+
+        </footer>
+
+        <script src="./js/mostrarArticulos.js" type="module"></script>
+        <script src="./js/crearArticulo.js" type="module"></script>
+        <script src="./js/eliminarArticulo.js" type="module"></script>
+    </body>
+
+</html>
